@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>pruebavue</title>
+  </head>
+  <body>
+    <div id="app">
+	    <my-component mensaje="flaaanders"></my-component>
+	    <my-component></my-component>
+	    <my-component></my-component>
+
+    </div>
+
+    <div id="app2">
+	  <input v-model="parentMsg">
+	  <br>
+	  <child v-bind:myMessage="parentMsg"></child>
+	</div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
